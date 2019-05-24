@@ -2,7 +2,17 @@
 
 
 
-function displayRepo () {
+function displayRepo (responseJson) {
+  console.log(responseJson);
+  $('#results-list').empty();
+  for (let item in responseJson){
+    $('#results-list').append(
+      `<li><h3><a href="${responseJson[item].html_url}">${responseJson[item].name}</a></h3>
+      </li>`
+  // console.log(item);
+    )};
+  //display the results section  
+  $('#results').removeClass('hidden');
 
 }
 
