@@ -14,7 +14,20 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
-       
+       <div class="container">
+           <h1>Github User Repo Search</h1>
+           <form id="js-form">
+               <label for="js-username">Username:</label>
+               <input type="text" name="username" id="js-username" placeholder="Username" required>
+               <input type="submit" value="Submit">
+           </form>
+           <p id="js-error-message" class="error-message"></p>
+           <section id="results" class="hidden">
+             <h2>Search results</h2>
+             <ul id="results-list">
+             </ul>
+           </section>
+       </div>
         <script src="index.js"></script>
     </body>
 </html>
